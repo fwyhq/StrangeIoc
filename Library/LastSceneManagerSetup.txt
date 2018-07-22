@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/StrangeIoC/examples/Assets/scenes/study1/study1.unity
+- path: Assets/Scene/main.unity
   isLoaded: 1
   isActive: 1

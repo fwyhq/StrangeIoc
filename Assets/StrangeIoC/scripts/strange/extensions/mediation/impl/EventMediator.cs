@@ -32,6 +32,10 @@ namespace strange.extensions.mediation.impl
 		[Inject(ContextKeys.CONTEXT_DISPATCHER)]
 		public IEventDispatcher dispatcher{ get; set;}
 
+	    public override void OnRegister()
+	    {
+	        base.OnRegister();
+	    }
 	}
 }
 

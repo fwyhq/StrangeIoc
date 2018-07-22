@@ -26,9 +26,6 @@ namespace strange.examples.myfirstproject
 		{
 			//Instantiate the context, passing it this instance.
 			context = new MyFirstContext(this);
-		    int num = 1;
-		    num <<= 30;
-		    print(num);
 
 		    //This is the most basic of startup choices, and probably the most common.
 		    //You can also opt to pass in ContextStartFlag options, such as:
