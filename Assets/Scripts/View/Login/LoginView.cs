@@ -26,9 +26,18 @@ namespace Assets.Scripts.View.Login
 
         public Button loginButton;
 
+        public Button simpleButton;
+        public Button speicalButton;
+        public Button showButton;
+        public Button hideButton;
+
         internal void OnInit()
         {
             loginButton.onClick.AddListener((() => { dispatcher.Dispatch(UIEventDef.Click_Login_Button); }));
+            simpleButton.onClick.AddListener((() => { dispatcher.Dispatch(UIEventDef.Click_Change_Mode_Simple); }));
+            speicalButton.onClick.AddListener((() => { dispatcher.Dispatch(UIEventDef.Click_Change_Mode_Special); }));
+            showButton.onClick.AddListener((() => { dispatcher.Dispatch(UIEventDef.Click_GameObject_Show); }));
+            hideButton.onClick.AddListener((() => { dispatcher.Dispatch(UIEventDef.Click_GameObject_Hide); }));
         }
     }
 }

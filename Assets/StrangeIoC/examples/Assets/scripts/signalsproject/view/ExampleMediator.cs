@@ -12,9 +12,15 @@ namespace strange.examples.signals
 	//Not extending EventMediator anymore
 	public class ExampleMediator : Mediator
 	{
-		[Inject]
-		public ExampleView view{ get; set;}
-		
+	    private ExampleView _view;
+	    //This is how your Mediator knows about your View.
+	    [Inject]
+	    public ExampleView view
+	    {
+	        get { return _view; }
+	        set { _view = value; }
+	    }
+
 		//Injecting this one because we want to listen for it
 		[Inject]
 		public ScoreChangedSignal scoreChangedSignal{ get; set;}

@@ -53,7 +53,7 @@ namespace strange.examples.signals
 			mediationBinder.Bind<ExampleView>().To<ExampleMediator>();
 			
 
-			commandBinder.Bind<CallWebServiceSignal>().To<CallWebServiceCommand>();
+			commandBinder.Bind<CallWebServiceSignal>().To<CallWebServiceCommand>().Once();
 			
 			//StartSignal is now fired instead of the START event.
 			//Note how we've bound it "Once". This means that the mapping goes away as soon as the command fires.

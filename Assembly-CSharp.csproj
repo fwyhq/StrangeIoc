@@ -61,13 +61,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Context\ContextBase.cs" />
+    <Compile Include="Assets\Scripts\Context\PetContext.cs" />
     <Compile Include="Assets\Scripts\Controller\StartCommand.cs" />
     <Compile Include="Assets\Scripts\GameContext.cs" />
     <Compile Include="Assets\Scripts\GameEventDef.cs" />
     <Compile Include="Assets\Scripts\GameRoot.cs" />
+    <Compile Include="Assets\Scripts\Model\IModel.cs" />
+    <Compile Include="Assets\Scripts\Model\LoginModel.cs" />
+    <Compile Include="Assets\Scripts\Model\MainModel.cs" />
+    <Compile Include="Assets\Scripts\Services\IServices.cs" />
+    <Compile Include="Assets\Scripts\Services\LoginServices.cs" />
+    <Compile Include="Assets\Scripts\Services\MainServices.cs" />
     <Compile Include="Assets\Scripts\Test\ITest.cs" />
     <Compile Include="Assets\Scripts\Test\TestRun.cs" />
     <Compile Include="Assets\Scripts\Test\TestWalk.cs" />
+    <Compile Include="Assets\Scripts\View\Entity\IEntity.cs" />
+    <Compile Include="Assets\Scripts\View\Entity\SimpleEntity.cs" />
+    <Compile Include="Assets\Scripts\View\Entity\SpecialEntity.cs" />
     <Compile Include="Assets\Scripts\View\Login\LoginMediator.cs" />
     <Compile Include="Assets\Scripts\View\Login\LoginView.cs" />
     <Compile Include="Assets\Scripts\View\Main\MainMediator.cs" />
@@ -298,16 +309,16 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>D:/GifProject/StrangeIoc/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/Git/StrangeIoc/StrangeIoc/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/GifProject/StrangeIoc/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/Git/StrangeIoc/StrangeIoc/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>D:/GifProject/StrangeIoc/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/Git/StrangeIoc/StrangeIoc/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/GifProject/StrangeIoc/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/Git/StrangeIoc/StrangeIoc/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/Unity2018.2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
