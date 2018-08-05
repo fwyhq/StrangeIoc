@@ -22,10 +22,9 @@ public class GameContext : MVCSContext {
 
     }
 
-    protected List<ContextBase> contextList;
+    protected List<ContextBase> contextList = new List<ContextBase>();
     public GameContext(MonoBehaviour view) : base(view)
     {
-        contextList = new List<ContextBase>();
     }
 
     protected override void mapBindings()
@@ -42,7 +41,7 @@ public class GameContext : MVCSContext {
 
         
 
-        commandBinder.Bind(ContextEvent.START).To<StartCommand>();
+        commandBinder.Bind(ContextEvent.START).To<ImageGameController>();
     }
 
     protected override void addCoreComponents()
@@ -53,20 +52,16 @@ public class GameContext : MVCSContext {
         injectionBinder.Bind<ICommandBinder>().To<EventCommandBinder>().ToSingleton();
     }
 
-    public override void Launch()
-    {
-        base.Launch();
-    }
-
     protected void addModuleComponents()
     {
         injectionBinder.Bind<PetContext>().ToSingleton();
+        injectionBinder.Bind<ImageContext>().ToSingleton();
     }
 
     protected void InstantiateModuleComponents()
     {
         contextList.Add(injectionBinder.GetInstance<PetContext>());
-
+        contextList.Add(injectionBinder.GetInstance<ImageContext>());
         for (int i = 0; i < contextList.Count; i++)
         {
             contextList[i].Binder();
@@ -75,8 +70,16 @@ public class GameContext : MVCSContext {
 
     protected override void instantiateCoreComponents()
     {
-        
         base.instantiateCoreComponents();
         this.InstantiateModuleComponents();
+    }
+
+    public override void Launch()
+    {
+        base.Launch();
+        for (int i = 0; i < contextList.Count; i++)
+        {
+            contextList[i].Launch();
+        }
     }
 }

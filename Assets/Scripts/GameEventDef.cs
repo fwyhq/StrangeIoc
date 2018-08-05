@@ -16,6 +16,10 @@ namespace Assets.Scripts
         GameObject_Show,
         GameObject_Hide,
 
+        Open_Pet_List_View,
+        Get_List_Pet_Data,
+        Image_Game_Item,
+        Get_Image_Game_Item,
     }
 
     public enum UIEventDef
@@ -26,6 +30,11 @@ namespace Assets.Scripts
         Click_GameObject_Show,
         Click_GameObject_Hide,
 
+    }
+
+    public enum NetEventDef
+    {
+        RES_LIST_PET_DATA,
     }
 
     public class ConstantName

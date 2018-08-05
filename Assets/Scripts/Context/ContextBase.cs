@@ -7,6 +7,7 @@
 // -----------------------------------------------------------------------
 
 using strange.extensions.command.api;
+using strange.extensions.context.api;
 using strange.extensions.dispatcher.eventdispatcher.api;
 using strange.extensions.injector.api;
 using strange.extensions.mediation.api;
@@ -24,7 +25,7 @@ namespace Assets.Scripts.Context
         [Inject]
         public IMediationBinder mediationBinder { get; set; }
 
-        [Inject]
+        [Inject(ContextKeys.CONTEXT_DISPATCHER)]
         public IEventDispatcher dispatcher { get; set; }
 
         public ContextBase()
@@ -33,6 +34,11 @@ namespace Assets.Scripts.Context
         }
 
         public virtual void Binder()
+        {
+
+        }
+
+        public virtual void Launch()
         {
 
         }

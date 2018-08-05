@@ -62,7 +62,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Context\ContextBase.cs" />
+    <Compile Include="Assets\Scripts\Context\ImageContext.cs" />
     <Compile Include="Assets\Scripts\Context\PetContext.cs" />
+    <Compile Include="Assets\Scripts\Controller\ImageGameController.cs" />
+    <Compile Include="Assets\Scripts\Controller\PetController.cs" />
     <Compile Include="Assets\Scripts\Controller\StartCommand.cs" />
     <Compile Include="Assets\Scripts\GameContext.cs" />
     <Compile Include="Assets\Scripts\GameEventDef.cs" />
@@ -70,19 +73,29 @@
     <Compile Include="Assets\Scripts\Model\IModel.cs" />
     <Compile Include="Assets\Scripts\Model\LoginModel.cs" />
     <Compile Include="Assets\Scripts\Model\MainModel.cs" />
+    <Compile Include="Assets\Scripts\Model\PetModel.cs" />
     <Compile Include="Assets\Scripts\Services\IServices.cs" />
     <Compile Include="Assets\Scripts\Services\LoginServices.cs" />
     <Compile Include="Assets\Scripts\Services\MainServices.cs" />
+    <Compile Include="Assets\Scripts\Services\PetServices.cs" />
     <Compile Include="Assets\Scripts\Test\ITest.cs" />
     <Compile Include="Assets\Scripts\Test\TestRun.cs" />
     <Compile Include="Assets\Scripts\Test\TestWalk.cs" />
     <Compile Include="Assets\Scripts\View\Entity\IEntity.cs" />
     <Compile Include="Assets\Scripts\View\Entity\SimpleEntity.cs" />
     <Compile Include="Assets\Scripts\View\Entity\SpecialEntity.cs" />
+    <Compile Include="Assets\Scripts\View\ImageGame\ImageAreaItem.cs" />
+    <Compile Include="Assets\Scripts\View\ImageGame\ImageGameMediator.cs" />
+    <Compile Include="Assets\Scripts\View\ImageGame\ImageGameView.cs" />
+    <Compile Include="Assets\Scripts\View\ImageGame\ImageProperty.cs" />
     <Compile Include="Assets\Scripts\View\Login\LoginMediator.cs" />
     <Compile Include="Assets\Scripts\View\Login\LoginView.cs" />
     <Compile Include="Assets\Scripts\View\Main\MainMediator.cs" />
     <Compile Include="Assets\Scripts\View\Main\MainView.cs" />
+    <Compile Include="Assets\Scripts\View\Pet\PetListIcon.cs" />
+    <Compile Include="Assets\Scripts\View\Pet\PetListItem.cs" />
+    <Compile Include="Assets\Scripts\View\Pet\PetListMediator.cs" />
+    <Compile Include="Assets\Scripts\View\Pet\PetListView.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\justtests\TesterContext.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\justtests\TesterContextView.cs" />
     <Compile Include="Assets\StrangeIoC\examples\Assets\scripts\justtests\view\ITesterView.cs" />
@@ -309,16 +322,16 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/Git/StrangeIoc/StrangeIoc/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>D:/GifProject/StrangeIoc/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Git/StrangeIoc/StrangeIoc/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/GifProject/StrangeIoc/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/Git/StrangeIoc/StrangeIoc/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/GifProject/StrangeIoc/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Git/StrangeIoc/StrangeIoc/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/GifProject/StrangeIoc/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/Unity2018.2/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
